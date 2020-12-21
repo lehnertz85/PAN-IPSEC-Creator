@@ -1,0 +1,2 @@
+hostname,subnet,local_tunnel,pan_tunnel,ike_gateway_name,tunnel_name,ipsec_tunnel_name,object_name,object_description,firewall_rule_name
+bob (or 192.168.1.1 if you use IPs for IPSEC),192.168.1.0,10.10.10.3,10.10.10.2,some_ike_gateway_45,tunnel.45,some_IPSEC_tunnel_name,my_object_192.168.1.0,Here's my object's description,bob udp 161 to snmp server

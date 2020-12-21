@@ -1,0 +1,64 @@
+[firewalls]
+fw = "<type ip or hostname here>"
+fw_ha = "<type ip or hostname here>"
+
+[api_key]
+key = "<type API key here>"
+
+# VPN specific configs
+
+[ike_gateway]
+version="ikev2-preferred"
+peer_ip_type="dynamic"
+interface="ethernet1/1" # This will be the interface where the VPN enters
+local_ip_address_type="ip"
+local_ip_address=" " # IP of the PAN interface
+pre_shared_key=" " # type the shared key
+peer_id_type="fqdn"
+enable_passive_mode=True
+enable_nat_traversal=True
+enable_fragmentation=False
+ikev1_exchange_mode="auto"
+ikev1_crypto_profile=" " # crypto profile name
+enable_dead_peer_detection=True
+ikev2_crypto_profile=" " # crytpo profile name
+
+[ipsec_tunnel]
+type="auto-key"
+ak_ipsec_crypto_profile=" " # crypto name
+enable_tunnel_monitor=False
+
+[address_object]
+type="ip-netmask"
+
+[static_route]
+nexthop_type="ip-address"
+metric=10
+
+[security_rule]
+fromzone=" "
+tozone=" "
+source=" "
+source_user="any"
+hip_profiles="any"
+application=" "
+service="application-default"
+category="any"
+action="allow"
+log_setting="default"
+# Below are the names of the respective policies
+virus=" "
+spyware=" "
+vulnerability=" "
+wildfire_analysis=" "
+
+[zone]
+name= " "
+mode="layer3"
+
+[address_group]
+name=" "
+
+[router_name]
+name="Default_vRouter"
+
