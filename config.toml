@@ -15,18 +15,18 @@ local_ip_address_type="ip"
 local_ip_address=" " # IP of the PAN interface
 pre_shared_key=" " # type the shared key
 peer_id_type="fqdn"
-enable_passive_mode=True
-enable_nat_traversal=True
-enable_fragmentation=False
+enable_passive_mode=true
+enable_nat_traversal=true
+enable_fragmentation=false
 ikev1_exchange_mode="auto"
 ikev1_crypto_profile=" " # crypto profile name
-enable_dead_peer_detection=True
+enable_dead_peer_detection=true
 ikev2_crypto_profile=" " # crytpo profile name
 
 [ipsec_tunnel]
 type="auto-key"
 ak_ipsec_crypto_profile=" " # crypto name
-enable_tunnel_monitor=False
+enable_tunnel_monitor=false
 
 [address_object]
 type="ip-netmask"
