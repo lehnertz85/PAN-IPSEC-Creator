@@ -10,6 +10,11 @@ Edit endpoints.csv with your VPN settings that are different between VPNs.
 
 You will need to manually run a commit from the GUI or cmd line. This is a safe guard, however, pan-os-python does provide a commit function if you are so inclined.
 
+### Verions
+
+Python - 3.7
+PAN-OS - 9.0.9
+
 Tested against python 3.7 and should work for any recent python3. It looks like pan-os-python requires >3.5 so I would stick to those versions of python.
 
 ## Description:
